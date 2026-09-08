@@ -1,0 +1,71 @@
+{
+  "paper": "Homography-Sensitivity-Guided BEV Localization with Bounded Residual Refinement for Measurement-Free Roadside Multi-Camera Vehicle Tracking",
+  "principal_sites": ["lumpi_M6", "lumpi_M3", "synth_Town04_O_day", "synth_Town05_O_day"],
+  "batch_id": "paper_yolo_001",
+  "split_protocol": {
+    "mode": "contiguous_time",
+    "train_frac": 0.6,
+    "val_frac": 0.1,
+    "test_frac": 0.3,
+    "note": "Adjacent frames of one trajectory remain on one side of the cut."
+  },
+  "sites": {
+    "lumpi_M6": {
+      "dataset": "LUMPI",
+      "measurement": 6,
+      "scene_id": "lumpi_M6",
+      "cameras": ["C05", "C06", "C07"],
+      "mvc_supported_component": ["C05", "C06"],
+      "geometric_fallback_cameras": ["C07"],
+      "identity_max_t_sec": 360.0,
+      "overlap_pairs": [["C05", "C06"], ["C05", "C07"], ["C06", "C07"]],
+      "frame_wh_by_camera": {"C05": [1920, 1080], "C06": [1640, 1232], "C07": [1640, 1232]},
+      "time_offsets_sec": {"C05:C06": -0.0237, "C05:C07": -0.0016, "C06:C07": 0.0221},
+      "principal_tc_exit": "accepted_and_deployed",
+      "config": "configs/lumpi_M6.yaml",
+      "importer": ["experiments/LUMPI/import_lumpi_mvc.py", "import", "--measurement", "6", "--h-source", "model"]
+    },
+    "lumpi_M3": {
+      "dataset": "LUMPI",
+      "measurement": 3,
+      "scene_id": "lumpi_M3",
+      "cameras": ["C08", "C09", "C10"],
+      "mvc_supported_component": ["C08", "C09", "C10"],
+      "geometric_fallback_cameras": [],
+      "overlap_pairs": [["C08", "C09"], ["C08", "C10"], ["C09", "C10"]],
+      "frame_wh_by_camera": {"C08": [1640, 1232], "C09": [1920, 1080], "C10": [1920, 1080]},
+      "time_offsets_sec": {"C08:C09": 0.0172, "C08:C10": 0.0401, "C09:C10": 0.0229},
+      "principal_tc_exit": "accepted_stable_residual_readout",
+      "config": "configs/lumpi_M3.yaml",
+      "importer": ["experiments/LUMPI/import_lumpi_mvc.py", "import", "--measurement", "3", "--h-source", "model"]
+    },
+    "synth_Town04_O_day": {
+      "dataset": "Synthehicle",
+      "scene_name": "Town04-O-day",
+      "scene_id": "synth_Town04_O_day",
+      "cameras": ["C01", "C02", "C03", "C04"],
+      "mvc_supported_component": ["C01", "C02", "C03", "C04"],
+      "geometric_fallback_cameras": [],
+      "overlap_pairs": [["C01", "C02"], ["C01", "C03"], ["C01", "C04"], ["C02", "C03"], ["C02", "C04"], ["C03", "C04"]],
+      "frame_wh_by_camera": {"C01": [1920, 1080], "C02": [1920, 1080], "C03": [1920, 1080], "C04": [1920, 1080]},
+      "time_offsets_sec": {"C01:C02": 0.0918, "C01:C03": -0.0872, "C01:C04": -0.0393, "C02:C03": -0.1790, "C02:C04": -0.1311, "C03:C04": 0.0479},
+      "principal_tc_exit": "accepted_stable_residual_readout",
+      "config": "configs/synth_Town04_O_day.yaml",
+      "importer": ["experiments/synthehicle/import_synthehicle_mvc.py", "import", "--scene", "Town04-O-day", "--h-source", "model", "--bbox-source", "gt_tight"]
+    },
+    "synth_Town05_O_day": {
+      "dataset": "Synthehicle",
+      "scene_name": "Town05-O-day",
+      "scene_id": "synth_Town05_O_day",
+      "cameras": ["C01", "C02", "C03", "C04", "C05", "C06"],
+      "mvc_supported_component": ["C01", "C02", "C03", "C04", "C05", "C06"],
+      "geometric_fallback_cameras": [],
+      "overlap_pairs": [["C01", "C02"], ["C01", "C03"], ["C01", "C04"], ["C01", "C05"], ["C01", "C06"], ["C02", "C03"], ["C02", "C04"], ["C02", "C05"], ["C02", "C06"], ["C03", "C04"], ["C03", "C05"], ["C03", "C06"], ["C04", "C05"], ["C04", "C06"], ["C05", "C06"]],
+      "frame_wh_by_camera": {"C01": [1920, 1080], "C02": [1920, 1080], "C03": [1920, 1080], "C04": [1920, 1080], "C05": [1920, 1080], "C06": [1920, 1080]},
+      "time_offsets_sec": {"C01:C02": 0.0223, "C01:C03": -0.0203, "C01:C04": -0.0117, "C01:C05": 0.0029, "C01:C06": -0.0296, "C02:C03": -0.0426, "C02:C04": -0.0340, "C02:C05": -0.0194, "C02:C06": -0.0519, "C03:C04": 0.0086, "C03:C05": 0.0232, "C03:C06": -0.0093, "C04:C05": 0.0146, "C04:C06": -0.0179, "C05:C06": -0.0325},
+      "principal_tc_exit": "no_op",
+      "config": "configs/synth_Town05_O_day.yaml",
+      "importer": ["experiments/synthehicle/import_synthehicle_mvc.py", "import", "--scene", "Town05-O-day", "--h-source", "model", "--bbox-source", "gt_tight"]
+    }
+  }
+}

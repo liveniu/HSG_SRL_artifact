@@ -1,0 +1,11 @@
+{
+  "scene_id": "smoke_pair",
+  "batch_id": "smoke_001",
+  "description": "Synthetic two-camera overlap for the artifact smoke test.",
+  "n_observations": 6400,
+  "n_split_rows": 6400,
+  "db": "data/init/smoke_pair.db",
+  "split_manifest": "splits/smoke_split_manifest.csv",
+  "geometry_version": "fab1_metric_jacobian_v1",
+  "contains_licensed_data": false
+}

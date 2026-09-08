@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: >-
+  Homography-Sensitivity-Guided BEV Localization with Bounded Residual
+  Refinement for Measurement-Free Roadside Multi-Camera Vehicle Tracking
+message: If you use this artifact, please cite the companion IEEE manuscript.
+type: software
+license: MIT
+authors:
+  - name: Anonymous for peer review
+abstract: >-
+  Isolated reproducibility artifact for HSG-SRL. Licensed roadside datasets
+  are obtained separately. Camera-ready repository URL and DOI will replace
+  the anonymous contact after acceptance.
+keywords:
+  - intelligent transportation systems
+  - roadside perception
+  - multi-camera vehicle tracking
+  - bird's-eye-view localization
+  - self-supervised learning

@@ -1,0 +1,13 @@
+site,split,n_rows,t_min_sec,t_max_sec,protocol
+lumpi_M3,test,136874,309.051655,441.480000,contiguous_time_60_10_30
+lumpi_M3,train,297907,0.040000,264.900000,contiguous_time_60_10_30
+lumpi_M3,val,63136,264.912842,309.040000,contiguous_time_60_10_30
+lumpi_M6,test,87229,252.033333,360.000000,contiguous_time_60_10_30
+lumpi_M6,train,197165,0.066667,216.000000,contiguous_time_60_10_30
+lumpi_M6,val,34076,216.033333,252.000000,contiguous_time_60_10_30
+synth_Town04_O_day,test,4530,126.100000,179.900000,contiguous_time_60_10_30
+synth_Town04_O_day,train,5506,0.200000,108.100000,contiguous_time_60_10_30
+synth_Town04_O_day,val,1749,108.200000,126.000000,contiguous_time_60_10_30
+synth_Town05_O_day,test,8930,126.100000,179.900000,contiguous_time_60_10_30
+synth_Town05_O_day,train,22235,0.200000,108.000000,contiguous_time_60_10_30
+synth_Town05_O_day,val,2475,108.100000,126.000000,contiguous_time_60_10_30

@@ -1,0 +1,5 @@
+# Enough for the synthetic smoke test (HSG features + optional tiny train).
+numpy>=1.26.0,<2.0.0
+opencv-contrib-python>=4.9.0
+PyYAML>=6.0.1
+torch>=2.1.0

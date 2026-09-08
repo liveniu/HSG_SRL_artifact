@@ -1,0 +1,27 @@
+# Local tooling — never publish
+.idea/
+.vscode/
+.cursor/
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# Licensed downloads and regenerated work products
+data/external/
+data/work/
+results/runs/
+results/smoke/
+*.pt
+*.log
+*.db
+*.db-wal
+*.db-shm
+
+# Tiny synthetic smoke DB is part of the published package.
+!data/init/smoke_pair.db

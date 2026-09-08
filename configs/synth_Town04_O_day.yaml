@@ -1,0 +1,122 @@
+# Paper-site configuration for the HSG-SRL artifact.
+# Licensed videos and first-frame images are not redistributed.
+# Replace the data/external placeholders after you download the dataset.
+#
+# Import: python scripts/import_paper_sites.py --site <site>
+# Train/eval: scripts/train_paper_sites.py and scripts/eval_paper_tables.py
+# Fusion reads cameras, overlap, and merge gates. It does not read
+# residual_train (importer-era leftover; paper train uses --max-pair-dist-m 2).
+# Camera names must match importer camera_name values.
+# Homographies come from import (--h-source model).
+
+# video/image paths are placeholders; image_roi is the fusion ground mask.
+
+synthehicle_experiment:
+  scenario: Town04-O-day
+  split: train
+  scene_id: synth_Town04_O_day
+  db: data/work/<site>.db
+  data_root: data/external/<licensed-dataset>
+  overlap_pairs:
+    - [C01, C02]
+    - [C01, C03]
+    - [C01, C04]
+    - [C02, C03]
+    - [C02, C04]
+    - [C03, C04]
+  frame_wh: [1920, 1080]
+  residual_train:
+    frame_width: 1920
+    frame_height: 1080
+    max_pair_dist_m: 80
+    min_mvc_pairs: 64
+    max_time_gap: 0.35
+    checkpoint: results/checkpoints/<site>_residual.pt
+
+scale_px_per_meter: 4.0
+seam_blend_px: 15
+canvas_margin_px: 60
+output: outputs/synth_Town04_O_bev.png
+debug_dir: outputs/debug_synthehicle
+
+trajectory_merge:
+  score_threshold: 0.75
+  max_distance_m: 2.0
+  distance_sigma: 1.0
+  shape_sigma: 0.35
+
+cameras:
+  - name: C01
+    image: data/external/media/<download-first-frame.png>
+    video: data/external/<licensed-dataset>/.../video.mp4
+    image_roi:
+      - [20, 324]
+      - [285, 525]
+      - [22, 732]
+      - [16, 1070]
+      - [1888, 1066]
+      - [1820, 728]
+      - [1402, 501]
+      - [1608, 226]
+      - [1587, 204]
+      - [1430, 180]
+      - [867, 378]
+      - [160, 210]
+      - [24, 244]
+  - name: C02
+    image: data/external/media/<download-first-frame.png>
+    video: data/external/<licensed-dataset>/.../video.mp4
+    image_roi:
+      - [332, 444]
+      - [418, 274]
+      - [411, 165]
+      - [882, 338]
+      - [1032, 358]
+      - [1544, 124]
+      - [1791, 171]
+      - [1410, 560]
+      - [1890, 852]
+      - [1870, 1050]
+      - [165, 1064]
+      - [90, 820]
+      - [446, 566]
+  - name: C03
+    image: data/external/media/<download-first-frame.png>
+    video: data/external/<licensed-dataset>/.../video.mp4
+    image_roi:
+      - [236, 296]
+      - [382, 218]
+      - [924, 375]
+      - [1208, 225]
+      - [1230, 154]
+      - [1390, 146]
+      - [1498, 285]
+      - [1371, 482]
+      - [1400, 570]
+      - [1906, 776]
+      - [1894, 1059]
+      - [1364, 1070]
+      - [1029, 914]
+      - [642, 1076]
+      - [9, 892]
+      - [532, 537]
+  - name: C04
+    image: data/external/media/<download-first-frame.png>
+    video: data/external/<licensed-dataset>/.../video.mp4
+    image_roi:
+      - [102, 186]
+      - [279, 100]
+      - [820, 272]
+      - [998, 292]
+      - [1420, 114]
+      - [1604, 178]
+      - [1428, 408]
+      - [1521, 550]
+      - [1899, 706]
+      - [1906, 1044]
+      - [1434, 1070]
+      - [984, 926]
+      - [586, 1074]
+      - [15, 1070]
+      - [20, 780]
+      - [429, 466]

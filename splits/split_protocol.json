@@ -1,0 +1,10 @@
+{
+  "mode": "contiguous_time",
+  "train_frac": 0.6,
+  "val_frac": 0.1,
+  "test_frac": 0.3,
+  "tool": "src/evaluation/fab2_manifest.py --split-mode time",
+  "rule": "Adjacent frames of one trajectory remain on one side of the cut.",
+  "principal_sites": ["lumpi_M6", "lumpi_M3", "synth_Town04_O_day", "synth_Town05_O_day"],
+  "note": "Full row-level manifests are regenerated after licensed data import and are not redistributed."
+}
