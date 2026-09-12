@@ -19,7 +19,9 @@ not a paper principal-run path.
 **Preflight rejected.** Town05 clean-frame exit is no-op. A
 `not_recommended` status must deploy `T_c=0`. Affine dominance is a routing
 signal toward homography re-estimation, not a license to apply an affine
-model.
+model. On M6 the top-level JSON `decision.status` is `caution` because of
+that affine warning; Table VIII still accepts \(T_c\). Use
+`diagnostics_by_scene[site].decision.status` (`recommended` on M6).
 
 **Residual acceptor: `thin_val` / `insufficient` / `not_recommended`.**
 These are valid outcomes of the Appendix C selector, not failures.

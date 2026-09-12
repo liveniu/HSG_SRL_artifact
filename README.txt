@@ -4,9 +4,8 @@ HSG-SRL reproducibility artifact
 Paper: Homography-Sensitivity-Guided BEV Localization with Bounded Residual
 Refinement for Measurement-Free Roadside Multi-Camera Vehicle Tracking
 
-This is the anonymized supplementary / reproducibility package. Contact the
-IEEE submission system for this manuscript. Camera-ready GitHub URL and DOI
-will be added after acceptance.
+Public repository: https://github.com/liveniu/HSG_SRL_artifact
+Contact: Jin Niu, Zhejiang University (LICENSE / CITATION.cff).
 
 Quick start
 -----------
@@ -29,4 +28,4 @@ Major components: src/pipeline, src/evaluation, scripts, configs, results/tables
 Setup: create a venv and install requirements; download datasets separately.
 Run: scripts/run_smoke_test.py; scripts/train_paper_sites.py; scripts/eval_paper_tables.py.
 Output: results/smoke/smoke_report.json and results/runs/<site>/.
-Contact: IEEE submission system for this manuscript.
+Contact: Jin Niu, Zhejiang University.

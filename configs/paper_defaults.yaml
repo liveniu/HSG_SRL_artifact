@@ -8,8 +8,8 @@ paper_principal:
   max_residual_m: 1.0          # Table II r_max; library default is 1.5
   max_pair_dist_m: 2.0         # recorded principal-run flag; library default is 3.0
   max_time_gap: 0.35
-  lambda_reg: 0.10             # Appendix E; recorded alpha/beta/gamma train flag (not argparse 0.05)
-  lambda_smooth: 0.02
+  lambda_reg: 0.10             # Table II; recorded train flag (not argparse 0.05)
+  lambda_smooth: 0.02          # Table II
   min_teacher_confidence: 0.20
   min_teacher_confidence_gap: 0.05
   teacher_confidence_power: 1.0
@@ -20,8 +20,8 @@ paper_principal:
   min_mvc_pairs: 64
   risk_scalar: metric_jacobian
   anchor_mode: multiplicative_gating_offsetted
-  s0_m: 60.0
-  feature_l0_m: 10.0
+  s0_m: 60.0                   # Table II
+  feature_l0_m: 10.0           # Table II L0
   anchor_shape_eta: 0.75
   motion_compensation: linear_interpolate
   loss_mode: asymmetric_teacher
@@ -37,9 +37,11 @@ library_argparse_defaults_in_vendored_copies:
   lambda_pair_center: 0.0
 
 appendix_e_method_defaults:
+  # Also listed in Table II:
   L0_m: 10.0
   lambda_reg: 0.10
   lambda_s: 0.02
+  # Omitted from Table II (Appendix E only):
   gamma: 1.0
   phi0: 0.05
   r0: 0.25
@@ -47,3 +49,5 @@ appendix_e_method_defaults:
   tau_delta: 0.05
   eta_shape: 0.75
   rho_bar: [0.5, 3.0]
+  N_min: 32                    # Appendix C thin-val rule
+  epsilon_q: 0.02              # WorsenTol = 1.02

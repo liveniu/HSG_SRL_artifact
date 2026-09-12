@@ -31,8 +31,8 @@ Evidence (closed development logs, not shipped with this artifact):
   `lambda_reg=0.1`, `max_pair_dist_m=2.0`, `max_residual_m=1.0`.
 - Ablation and recovery trains reuse the same three residual flags.
 
-Appendix E therefore lists `lambda_reg=0.10` because that is the
-recorded principal-run value, not the unused argparse default 0.05.
+Table II and Appendix E therefore list `lambda_reg=0.10` because that is
+the recorded principal-run value, not the unused argparse default 0.05.
 
 The importer-era site YAML field `max_pair_dist_m: 80` was never
 passed by the paper train drivers. It is leftover example text from

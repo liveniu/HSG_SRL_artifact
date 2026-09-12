@@ -1,5 +1,8 @@
 # lumpi_M6 supervised subgraph ['C05', 'C06'] (test split)
 
+Paper map (fab3): Tables III--IV footnote (BEV-HOTA 32.9--34.1%).
+Not Table VII (objective-ablation batch).
+
 ## seed0 ipm->geo (C1 forward geometry, subgraph pooled)
   n_obs=49487 n_tracks=498
   dmedian = -1.3107 m  CI95 [-1.3616,-1.1849] SIG  (ipm 2.136 -> geo 0.825)

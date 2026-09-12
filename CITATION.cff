@@ -5,12 +5,16 @@ title: >-
 message: If you use this artifact, please cite the companion IEEE manuscript.
 type: software
 license: MIT
+url: https://github.com/liveniu/HSG_SRL_artifact
+repository-code: https://github.com/liveniu/HSG_SRL_artifact
 authors:
-  - name: Anonymous for peer review
+  - family-names: Niu
+    given-names: Jin
+    affiliation: Zhejiang University
 abstract: >-
   Isolated reproducibility artifact for HSG-SRL. Licensed roadside datasets
-  are obtained separately. Camera-ready repository URL and DOI will replace
-  the anonymous contact after acceptance.
+  are obtained separately. Cite the companion IEEE manuscript for the full
+  author list.
 keywords:
   - intelligent transportation systems
   - roadside perception

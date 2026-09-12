@@ -1,5 +1,11 @@
 # lumpi_M6 temporal extrapolation (train split of 0-360s, eval t>360s)
 
+Paper map (fab3 Table VI):
+- C06 dMedian -0.21 to -0.25 m is Table VI row 1 (later C06 interval).
+- C07 in this file is a temporal force-all diagnostic (+0.08 to +0.15 m).
+  It is not Table VI last row. That row is test-split force-all,
+  +0.11 to +0.17 m. Principal Frozen C07 keeps DeltaP=0 (`summary.md`).
+
 ## seed0
  C05 n_obs=268 n_tracks=12
  C05 dmedian = +0.0915 m  CI95 [-0.1039,+0.1816] ns  (geo 0.703 -> final 0.794)

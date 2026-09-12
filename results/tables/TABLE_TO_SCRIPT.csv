@@ -14,7 +14,7 @@ MVC pair counts,results/tables/mvc_pair_counts.csv,training logs / mine_mvc_pair
 Fig. 1,figures/sources/fig1_overall_hsg_srl_architecture_fab3.svg,manual schematic
 Fig. 2(a),figures/sources/fig2_homography_sensitivity_guidance.svg,manual schematic
 Fig. 2(b),figures/PLACEHOLDER_fig2b_measured_field.md,not redistributed; LUMPI view under dataset license
-Fig. 3,figures/sources/fig5_geometric_localization.svg,results/tables/table_iii_localization.csv and table_iv_tracking.csv
-Fig. 4,figures/sources/fig6_translation_gate_recovery.svg,results/tables/table_ix_drift_recovery.csv
-Appendix F,evaluation/eval_fab2_calibration.py,frozen_homography_perturbation.csv (roll/pitch stress diagnostics; not a principal table)
+Fig. 3,figures/sources/fig5_geometric_localization.svg,generate_fab3_result_figures.py from Tables III-IV principal all-camera Frozen rows (not the C05-C06 subgraph footnote)
+Fig. 4,figures/sources/fig6_translation_gate_recovery.svg,generate_fab3_result_figures.py from recovery-batch m0 0.758/0.849/0.744/0.619 m plus Table IX; Fig. 4(a) clean bars are not Table III P_geo
+Appendix F,results/tables/appendix_f_frozen_homography.csv,evaluation/eval_fab2_calibration.py (roll/pitch medians; not a numbered table; raw closed-repo dump is not shipped)
 Algorithm D.1 schematic (not a body figure),figures/sources/figd1_low_order_calibration_screening.svg,optional; manuscript body figures are Fig. 1-4

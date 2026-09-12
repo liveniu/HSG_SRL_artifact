@@ -8,10 +8,10 @@ extracted programs stay recognizable. The paper tables were produced by
 | --- | --- | --- |
 | `--max-residual-m` | 1.5 | **1.0** (Table II) |
 | `--max-pair-dist-m` | 3.0 | **2** |
-| `--lambda-reg` | 0.05 | **0.10** (Appendix E and recorded commands) |
+| `--lambda-reg` | 0.05 | **0.10** (Table II and recorded commands) |
 | `--lambda-mean-delta` | **0.0** (disabled) | **1.0** (Appendix E \(R_{\mathrm{mean}}\)) |
 | `--lambda-pair-center` | **0.0** (disabled) | **0.5** (Appendix E \(R_{\mathrm{pair}}\)) |
-| `--lambda-smooth` | 0.02 | 0.02 |
+| `--lambda-smooth` | 0.02 | **0.02** (Table II \(\lambda_s\)) |
 | `--min-teacher-confidence` | 0.20 | 0.20 |
 | `--min-teacher-confidence-gap` | 0.05 | 0.05 |
 | `--risk-scalar` | metric_jacobian | metric_jacobian |

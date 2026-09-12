@@ -47,6 +47,10 @@ it does not itself set fit status. `recommended` is a usable candidate;
 `caution` needs explicit review; `not_recommended` must not be deployed
 (`T_c=0`). For the M6 results in Table VIII, fitting and gate statistics
 use a subset capped at 5000 training pairs after filtering (Appendix D).
+The shipped `manifests/preflight/lumpi_M6_preflight_Tc.json` therefore has
+top-level `decision.status=caution` (affine-dominated pair warning) while
+`diagnostics_by_scene.lumpi_M6.decision.status=recommended`; Table VIII
+reports the latter as accepted \(T_c\).
 
 Training-time `--camera-translation-json` and runtime
 `--g2-camera-translation-json` are independent.
@@ -84,9 +88,12 @@ Contracts that must stay true:
 ## Appendix F — frozen homography perturbation
 
 The roll/pitch stress diagnostics in Appendix F are produced by
-`evaluation/eval_fab2_calibration.py` (`frozen_homography_perturbation.csv`).
-They are not a principal table; Section IV-E keeps them separate from
-Table IX. Constant-dose recovery (Table IX) remains
+`evaluation/eval_fab2_calibration.py`. They are not a principal numbered
+table; Section IV-E keeps them separate from Table IX. The manuscript
+states the recorded ranges in prose. A compact archive of those medians
+is `results/tables/appendix_f_frozen_homography.csv`. Do not expect the
+closed-repo raw dump `frozen_homography_perturbation.csv` in this tree.
+Constant-dose recovery (Table IX) remains
 `evaluation/run_fab2_perturbation_recovery.py`.
 
 ## Unified BEV fusion
@@ -108,7 +115,7 @@ given; `--g2-acceptor-json` gates \(\Delta P\) per camera as above.
 | Tables VIII--IX | preflight JSON + `run_fab2_perturbation_recovery.py` |
 | Table X | `profile_fab2_edge.py` |
 | Appendix B.1 | `eval_fab2_premise_audit.py` |
-| Appendix F | `eval_fab2_calibration.py` (`frozen_homography_perturbation.csv`) |
+| Appendix F | `eval_fab2_calibration.py`; recorded medians in `results/tables/appendix_f_frozen_homography.csv` (not a numbered table) |
 
 Table IV needs the origin GT sqlite (`--gt-db`), a split manifest with
 test keys, and `det_gt_match_report.json` (`--match-report`) for camera

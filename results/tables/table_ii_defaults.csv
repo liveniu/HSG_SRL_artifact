@@ -1,12 +1,12 @@
 parameter,symbol,paper_value,notes
 Sensitivity saturation constant,s0,60 m,Table II
+Metric extent normalizer,L0,10 m,Table II
 Hard residual bound,r_max,1.0 m,Table II; recorded runs pass --max-residual-m 1.0
+Residual regularizer,lambda_reg,0.10,Table II; recorded principal-run command (library argparse default 0.05)
+Temporal smoother,lambda_s,0.02,Table II
 MLP architecture / parameters,—,"7->64->64->2 / ~4.8k",Table II
 MVC alignment,—,interpolate to common t*; max gap 0.35 s,Table II
-Metric extent normalizer,L0,10 m,Appendix E
-Residual regularizer,lambda_reg,0.10,Appendix E and recorded principal-run command
-Temporal smoother,lambda_s,0.02,Appendix E
-Teacher power,gamma,1,Appendix E
+Teacher power,gamma,1,Appendix E (omitted from Table II)
 Student weight floor,phi0,0.05,Appendix E
 Regularizer confidence floor,r0,0.25,Appendix E
 Teacher confidence,tau,0.20,Appendix E

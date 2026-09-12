@@ -3,15 +3,15 @@
 **Paper:** Homography-Sensitivity-Guided BEV Localization with Bounded Residual
 Refinement for Measurement-Free Roadside Multi-Camera Vehicle Tracking
 
-**Status:** anonymized supplementary / reproducibility package for peer review.
-The camera-ready GitHub URL and DOI will be added after acceptance.
+**Repository:** https://github.com/liveniu/HSG_SRL_artifact
 
-**Contact:** use the IEEE submission system for this manuscript.
+**Contact:** Jin Niu, Zhejiang University (see `LICENSE` and `CITATION.cff`).
+A Zenodo DOI can be added after the camera-ready version is archived.
 
-This directory is self-contained and is intended to be uploaded later as an
-independent GitHub repository. It does **not** modify the development tree
-from which the sources were extracted. All published files are English.
-Run `python scripts/check_english.py` before upload.
+This directory is the public reproducibility artifact. It does **not**
+modify the closed development tree from which the sources were extracted.
+All published files are English. Run `python scripts/check_english.py`
+before upload.
 
 ## 1. What this package contains
 
@@ -125,8 +125,11 @@ V/VII, and IX (HSG-Geo and HSG-SRL-Frozen rows only; Table IV needs
 not a stored DB column). Table VI, Table VIII, and Table X use the
 specialized entries listed in `results/tables/TABLE_TO_SCRIPT.csv`.
 
-Recorded principal-run summaries (no raw frames) are under
-`results/recorded_runs/`.
+Recorded principal Frozen summaries (no raw frames) are under
+`results/recorded_runs/` (Tables III--IV; see that folder's README for
+what is not dumped). Figure sources under `figures/` match the fab3
+body figures: Fig. 3 is Tables III--IV, Fig. 4 uses recovery-batch \(m_0\)
+and Table IX.
 
 ## 6. Paper-explicit flags versus library defaults
 
@@ -167,7 +170,7 @@ See `configs/paper_defaults.yaml`, `docs/CODE_DEFAULTS_VS_PAPER.md`, and
 | Tables II--X, B.1 | `results/tables/` |
 | Command log | `results/runs/<site>/train_fab2_site_frozen_commands.csv` |
 | Checkpoint index | `manifests/frozen_checkpoint_manifest.csv` |
-| Translation gate | `manifests/preflight/<site>_preflight_Tc.json` |
+| Translation gate | `manifests/preflight/<site>_preflight_Tc.json` (Table VIII uses `diagnostics_by_scene[<site>].decision.status`; the top-level `decision.status` may be `caution` when an affine warning is present) |
 | Residual acceptor (Appendix C selector) | `manifests/acceptor/<site>_seed{N}.json` |
 | Per-seed evaluable DB (P_final) | `results/runs/<site>/eval/<site>_seed{N}.db` |
 | File checksums | `manifests/ARTIFACT_MANIFEST.csv` |
@@ -212,15 +215,16 @@ Common failures:
 - GT identity leakage guard → training stops if `global_id` matches GT; use
   pseudo identities from geometry-only remerge
 - preflight `not_recommended` → deploy `T_c = 0`; do not force a translation
+- M6 top-level JSON `decision.status=caution` → still accepted in Table VIII;
+  read `diagnostics_by_scene.lumpi_M6.decision.status` (`recommended`)
 
-## 10. Isolation and later GitHub upload
+## 10. Isolation and GitHub root
 
 Sources under `src/` and `experiments/` are copies. Isolation patches are
 limited to path roots (`src/utils/project_paths.py`, default result directory,
 importer `data/external/` roots). See `docs/ISOLATION.md` and
-`src/SOURCE_MAP.csv`. Run `python scripts/check_english.py` before upload.
+`src/SOURCE_MAP.csv`.
 
-To publish this folder as its own repository, `git init` here (or copy
-this folder) and push that root. The parent development tree is closed
-source and must not be uploaded. Do not include `data/external/`, work
-databases, licensed frames, `.idea/`, or `*.pt`.
+This folder is already the public GitHub root. The parent development tree
+is closed source and must not be uploaded. Do not include `data/external/`,
+work databases, licensed frames, `.idea/`, or `*.pt`.
