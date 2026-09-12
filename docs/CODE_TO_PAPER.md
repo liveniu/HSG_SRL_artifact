@@ -42,9 +42,11 @@ Diagnostic-only helper: `utils/g2_preflight_diagnostic.py`.
 
 `diagnostics_by_scene[site].decision.status` is the paper gate used by
 training. The top-level JSON `decision` may be more conservative when an
-affine pair warning is present. `recommended` is a usable candidate;
+affine pair warning is present. Affine dominance is a diagnostic flag;
+it does not itself set fit status. `recommended` is a usable candidate;
 `caution` needs explicit review; `not_recommended` must not be deployed
-(`T_c=0`).
+(`T_c=0`). For the M6 results in Table VIII, fitting and gate statistics
+use a subset capped at 5000 training pairs after filtering (Appendix D).
 
 Training-time `--camera-translation-json` and runtime
 `--g2-camera-translation-json` are independent.
