@@ -1,0 +1,9 @@
+seed,P_geo_m,P_geo_plus_Tc_m,asymmetric_final_m,symmetric_final_m,asymmetric_residual_increment
+0,0.825,0.696,0.658,0.643,"-0.038 [-0.081, -0.005]"
+1,0.825,0.696,0.608,0.650,"-0.088 [-0.138, -0.049]"
+2,0.825,0.696,0.622,0.664,"-0.073 [-0.115, -0.037]"
+
+row,BEV_HOTA,IDF1_2m,ID_switches,evaluation_role
+Geometric tracking baseline (P_geo),0.287,0.370,1172,tracking baseline
+Asymmetric final,0.321-0.337,0.379-0.381,1230-1241,translation plus asymmetric residual (objective-ablation batch; not Table IV)
+Symmetric final,0.326-0.348,0.375-0.379,1224-1255,translation plus symmetric residual (objective-ablation batch)

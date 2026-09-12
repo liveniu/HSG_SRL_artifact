@@ -1,0 +1,5 @@
+dataset,site,recording,scene_id,record_type,camera_id,camera_a,camera_b,scale_px_per_meter,homography_source,point_count,inlier_count,reproj_rms,geometry_version,bfs_hop,calibrated_at
+LUMPI,lumpi_M6,lumpi_M6,lumpi_M6,camera_calibration,C05,,,4,lumpi_ground_plane_fallback:M6,0,0,6.348027e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:12.316371+00:00
+LUMPI,lumpi_M6,lumpi_M6,lumpi_M6,camera_calibration,C06,,,4,lumpi_ground_plane_fallback:M6,0,0,3.658679361e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:12.316371+00:00
+LUMPI,lumpi_M6,lumpi_M6,lumpi_M6,camera_calibration,C07,,,4,lumpi_ground_plane_fallback:M6,0,0,4.861253274e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:12.316371+00:00
+LUMPI,lumpi_M6,lumpi_M6,lumpi_M6,overlap_edge,,C05,C06,,,,,,,,

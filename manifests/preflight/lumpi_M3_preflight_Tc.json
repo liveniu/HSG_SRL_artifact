@@ -1,0 +1,283 @@
+{
+  "version": "g2_camera_translation_correction_v2",
+  "created_at": "2026-08-12T10:25:49Z",
+  "db": "<local-input>/yolo_lumpi_M3.db",
+  "scenes": [
+    "lumpi_M3"
+  ],
+  "batch_id": "alpha_yolo_001",
+  "unit": "meter",
+  "correction_model": "per_camera_2d_translation_cumulative",
+  "fit_scope": "per_scene",
+  "pair_source": "selected",
+  "pair_weight": "learning-score",
+  "gauge": "weighted-zero",
+  "gauge_weight": "kappa-mean",
+  "reference_camera": null,
+  "max_pair_dist_m": 3.0,
+  "min_teacher_confidence": 0.2,
+  "min_teacher_confidence_gap": 0.05,
+  "decision": {
+    "status": "caution",
+    "warnings": [
+      "scene=lumpi_M3 affine-dominated pair: C08:C10 (translation_explained=34.5% affine_explained=73.9%)"
+    ]
+  },
+  "corrections_m_by_scene": {
+    "lumpi_M3": {
+      "C08": {
+        "dx": 0.1886870337128365,
+        "dy": -0.1044629300340712,
+        "gauge_weight": 0.5949348976109452
+      },
+      "C09": {
+        "dx": -0.17734053763219557,
+        "dy": 0.16028804663809484,
+        "gauge_weight": 0.4623162257027972
+      },
+      "C10": {
+        "dx": -0.06562857522450269,
+        "dy": -0.025920751329870262,
+        "gauge_weight": 0.4612181958345583
+      }
+    }
+  },
+  "diagnostics_by_scene": {
+    "lumpi_M3": {
+      "pair_count": 5000,
+      "before": {
+        "n": 5000,
+        "mean_xy": [
+          -0.30731942938268186,
+          0.1634045955657959
+        ],
+        "median_xy": [
+          -0.30476289987564087,
+          0.06911659240722656
+        ],
+        "mean_norm": 0.3480607612588907,
+        "norm": {
+          "n": 5000.0,
+          "mean": 0.4329980218280146,
+          "p50": 0.3822531478018002,
+          "p90": 0.8087055672568421,
+          "max": 1.9818754437388684
+        }
+      },
+      "after": {
+        "n": 5000,
+        "mean_xy": [
+          -0.0005885679660661052,
+          -0.002506762534531932
+        ],
+        "median_xy": [
+          0.02243290907158646,
+          -0.10292954159800025
+        ],
+        "mean_norm": 0.002574931194267557,
+        "norm": {
+          "n": 5000.0,
+          "mean": 0.2441387425586766,
+          "p50": 0.16591462070197388,
+          "p90": 0.5044624410502264,
+          "max": 2.103347332836826
+        }
+      },
+      "pair_stats": [
+        {
+          "camera_a": "C08",
+          "camera_b": "C09",
+          "count": 2346,
+          "before": {
+            "n": 2346,
+            "mean_xy": [
+              -0.3661460814281396,
+              0.2623037694360289
+            ],
+            "median_xy": [
+              -0.3402346968650818,
+              0.24217891693115234
+            ],
+            "mean_norm": 0.4504067277534065,
+            "norm": {
+              "n": 2346.0,
+              "mean": 0.5045789332671894,
+              "p50": 0.4086982504640547,
+              "p90": 0.8874899016189376,
+              "max": 1.9074393713407976
+            }
+          },
+          "after": {
+            "n": 2346,
+            "mean_xy": [
+              -0.00011850946327805481,
+              -0.002447227805992031
+            ],
+            "median_xy": [
+              0.025792875099779844,
+              -0.02257208031086677
+            ],
+            "mean_norm": 0.0024500955955445948,
+            "norm": {
+              "n": 2346.0,
+              "mean": 0.22080219205854032,
+              "p50": 0.19812581515971706,
+              "p90": 0.4913415036836969,
+              "max": 1.94205265090171
+            }
+          },
+          "mean_geo_a_minus_geo_b_m": [
+            -0.3661460814281396,
+            0.2623037694360289
+          ],
+          "mean_corrected_geo_a_minus_geo_b_m": [
+            -0.00011850946327805481,
+            -0.002447227805992031
+          ],
+          "mean_kappa_a": 0.5945266250039105,
+          "mean_kappa_b": 0.4623162257027972
+        },
+        {
+          "camera_a": "C08",
+          "camera_b": "C10",
+          "count": 2654,
+          "before": {
+            "n": 2654,
+            "mean_xy": [
+              -0.2553196834525221,
+              0.07598279379504735
+            ],
+            "median_xy": [
+              -0.23682403564453125,
+              -0.04024028778076172
+            ],
+            "mean_norm": 0.26638604638981517,
+            "norm": {
+              "n": 2654.0,
+              "mean": 0.3697241641655037,
+              "p50": 0.26727332872508586,
+              "p90": 0.6980159570142884,
+              "max": 1.9818754437388684
+            }
+          },
+          "after": {
+            "n": 2654,
+            "mean_xy": [
+              -0.0010040755951317855,
+              -0.0025593881838132386
+            ],
+            "median_xy": [
+              0.017491572212857187,
+              -0.11878246975962134
+            ],
+            "mean_norm": 0.0027492973058914666,
+            "norm": {
+              "n": 2654.0,
+              "mean": 0.26476705735646083,
+              "p50": 0.16186265895623037,
+              "p90": 0.5146026840331674,
+              "max": 2.103347332836826
+            }
+          },
+          "mean_geo_a_minus_geo_b_m": [
+            -0.2553196834525221,
+            0.07598279379504735
+          ],
+          "mean_corrected_geo_a_minus_geo_b_m": [
+            -0.0010040755951317855,
+            -0.0025593881838132386
+          ],
+          "mean_kappa_a": 0.5952957896742848,
+          "mean_kappa_b": 0.4612181958345583
+        }
+      ],
+      "decision": {
+        "status": "recommended",
+        "improvement_frac": 0.4361666098889299,
+        "bias_reduction_frac": 0.9926020641196257,
+        "warnings": []
+      }
+    }
+  },
+  "scene_summaries": [
+    {
+      "scene_id": "lumpi_M3",
+      "camera_names": [
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "overlap_pairs": [
+        [
+          "C08",
+          "C09"
+        ],
+        [
+          "C08",
+          "C10"
+        ],
+        [
+          "C09",
+          "C10"
+        ]
+      ],
+      "overlap_source": "db:scene_overlap_pairs",
+      "observations": 297907,
+      "total_db_observations": 497917,
+      "protocol_stats": {
+        "observations_before_protocol_filter": 497917,
+        "observations_after_time_filter": 497917,
+        "observations_after_split_filter": 297907
+      },
+      "gt_identity_guard": {
+        "compared": 91808.0,
+        "matches": 0.0,
+        "match_fraction": 0.0
+      },
+      "raw_mvc_pairs": 150312,
+      "distance_filtered_pairs": 150070,
+      "selected_pairs": 5000,
+      "used_pairs": 5000,
+      "frame_wh_by_camera": {
+        "C08": [
+          1640,
+          1232
+        ],
+        "C09": [
+          1920,
+          1080
+        ],
+        "C10": [
+          1920,
+          1080
+        ]
+      }
+    }
+  ],
+  "fit_procedure": {
+    "mode": "coarse_to_fine_outer_loop",
+    "wide_window_m": null,
+    "default_window_m": 3.0,
+    "converge_m": 0.02,
+    "max_iters": 8,
+    "rounds": [
+      {
+        "round": 0,
+        "window_m": 3.0,
+        "max_step_m": 0.239,
+        "status_by_scene": {
+          "lumpi_M3": "recommended"
+        }
+      },
+      {
+        "round": 1,
+        "window_m": 3.0,
+        "max_step_m": 0.0,
+        "status_by_scene": {
+          "lumpi_M3": "caution"
+        }
+      }
+    ],
+    "note": "decision/diagnostics taken from round 0 (fit against uncorrected data)"
+  }
+}

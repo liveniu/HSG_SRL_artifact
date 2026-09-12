@@ -1,0 +1,217 @@
+{
+  "version": "g2_camera_translation_correction_v2",
+  "created_at": "2026-08-12T10:18:41Z",
+  "db": "<local-input>/yolo_lumpi_M6.db",
+  "scenes": [
+    "lumpi_M6"
+  ],
+  "batch_id": "alpha_yolo_001",
+  "unit": "meter",
+  "correction_model": "per_camera_2d_translation_cumulative",
+  "fit_scope": "per_scene",
+  "pair_source": "selected",
+  "pair_weight": "learning-score",
+  "gauge": "weighted-zero",
+  "gauge_weight": "kappa-mean",
+  "reference_camera": null,
+  "max_pair_dist_m": 3.0,
+  "min_teacher_confidence": 0.2,
+  "min_teacher_confidence_gap": 0.05,
+  "decision": {
+    "status": "caution",
+    "warnings": [
+      "scene=lumpi_M6 affine-dominated pair: C05:C06 (translation_explained=17.2% affine_explained=68.4%)"
+    ]
+  },
+  "corrections_m_by_scene": {
+    "lumpi_M6": {
+      "C05": {
+        "dx": 0.18547700965026473,
+        "dy": 0.03463921052782721,
+        "gauge_weight": 0.32258858502153936
+      },
+      "C06": {
+        "dx": -0.2204942053579377,
+        "dy": -0.041183911995050344,
+        "gauge_weight": 0.27135136242313224
+      }
+    }
+  },
+  "diagnostics_by_scene": {
+    "lumpi_M6": {
+      "pair_count": 5000,
+      "before": {
+        "n": 5000,
+        "mean_xy": [
+          -0.398154305267334,
+          -0.08572070265375077
+        ],
+        "median_xy": [
+          -0.19663047790527344,
+          -0.21210575103759766
+        ],
+        "mean_norm": 0.40727741119090577,
+        "norm": {
+          "n": 5000.0,
+          "mean": 0.85512829289457,
+          "p50": 0.8176275133194038,
+          "p90": 1.5331145150541952,
+          "max": 2.9831043656228196
+        }
+      },
+      "after": {
+        "n": 5000,
+        "mean_xy": [
+          0.003530540410975537,
+          -0.006448780668011025
+        ],
+        "median_xy": [
+          0.20505436777303876,
+          -0.13283382905185864
+        ],
+        "mean_norm": 0.007351971687761321,
+        "norm": {
+          "n": 5000.0,
+          "mean": 0.7995053465033137,
+          "p50": 0.6866784178547445,
+          "p90": 1.314742934938733,
+          "max": 2.89657379097187
+        }
+      },
+      "pair_stats": [
+        {
+          "camera_a": "C05",
+          "camera_b": "C06",
+          "count": 5000,
+          "before": {
+            "n": 5000,
+            "mean_xy": [
+              -0.398154305267334,
+              -0.08572070265375077
+            ],
+            "median_xy": [
+              -0.19663047790527344,
+              -0.21210575103759766
+            ],
+            "mean_norm": 0.40727741119090577,
+            "norm": {
+              "n": 5000.0,
+              "mean": 0.85512829289457,
+              "p50": 0.8176275133194038,
+              "p90": 1.5331145150541952,
+              "max": 2.9831043656228196
+            }
+          },
+          "after": {
+            "n": 5000,
+            "mean_xy": [
+              0.003530540410975537,
+              -0.006448780668011025
+            ],
+            "median_xy": [
+              0.20505436777303876,
+              -0.13283382905185864
+            ],
+            "mean_norm": 0.007351971687761321,
+            "norm": {
+              "n": 5000.0,
+              "mean": 0.7995053465033137,
+              "p50": 0.6866784178547445,
+              "p90": 1.314742934938733,
+              "max": 2.89657379097187
+            }
+          },
+          "mean_geo_a_minus_geo_b_m": [
+            -0.398154305267334,
+            -0.08572070265375077
+          ],
+          "mean_corrected_geo_a_minus_geo_b_m": [
+            0.003530540410975537,
+            -0.006448780668011025
+          ],
+          "mean_kappa_a": 0.32258858502153936,
+          "mean_kappa_b": 0.27135136242313224
+        }
+      ],
+      "decision": {
+        "status": "recommended",
+        "improvement_frac": 0.06504631743966181,
+        "bias_reduction_frac": 0.9819484914072114,
+        "warnings": []
+      }
+    }
+  },
+  "scene_summaries": [
+    {
+      "scene_id": "lumpi_M6",
+      "camera_names": [
+        "C05",
+        "C06",
+        "C07"
+      ],
+      "overlap_pairs": [
+        [
+          "C05",
+          "C06"
+        ]
+      ],
+      "overlap_source": "db:scene_overlap_pairs",
+      "observations": 197165,
+      "total_db_observations": 318470,
+      "protocol_stats": {
+        "observations_before_protocol_filter": 318470,
+        "observations_after_time_filter": 318470,
+        "observations_after_split_filter": 197165
+      },
+      "gt_identity_guard": {
+        "compared": 146668.0,
+        "matches": 0.0,
+        "match_fraction": 0.0
+      },
+      "raw_mvc_pairs": 17746,
+      "distance_filtered_pairs": 17467,
+      "selected_pairs": 5000,
+      "used_pairs": 5000,
+      "frame_wh_by_camera": {
+        "C05": [
+          1920,
+          1080
+        ],
+        "C06": [
+          1640,
+          1232
+        ],
+        "C07": [
+          1640,
+          1232
+        ]
+      }
+    }
+  ],
+  "fit_procedure": {
+    "mode": "coarse_to_fine_outer_loop",
+    "wide_window_m": null,
+    "default_window_m": 3.0,
+    "converge_m": 0.02,
+    "max_iters": 8,
+    "rounds": [
+      {
+        "round": 0,
+        "window_m": 3.0,
+        "max_step_m": 0.2224,
+        "status_by_scene": {
+          "lumpi_M6": "recommended"
+        }
+      },
+      {
+        "round": 1,
+        "window_m": 3.0,
+        "max_step_m": 0.003,
+        "status_by_scene": {
+          "lumpi_M6": "caution"
+        }
+      }
+    ],
+    "note": "decision/diagnostics taken from round 0 (fit against uncorrected data)"
+  }
+}

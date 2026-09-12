@@ -1,0 +1,6 @@
+site,scope,baseline_BEV_HOTA,ours_HSG_SRL_frozen_BEV_HOTA,BEVHeight_ref,LocA_2m_baseline,LocA_2m_ours
+LUMPI M6,all cameras,0.272,0.308-0.310,[0.230],0.654,0.693-0.704
+LUMPI M6,C05-C06 subgraph (Table IV footnote),0.287,0.329-0.341,—,0.591,0.657-0.677
+LUMPI M3,all cameras,0.330,0.332-0.334,[0.204],unchanged,unchanged
+Synthehicle Town04,all cameras,0.288,0.280-0.285,[0.292],unchanged,unchanged
+Synthehicle Town05,all cameras,0.345,0.367-0.372,[0.413],0.674,0.684-0.703

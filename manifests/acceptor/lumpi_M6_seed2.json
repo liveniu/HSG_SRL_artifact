@@ -1,0 +1,212 @@
+{
+  "version": "mlp_percam_acceptor_v1",
+  "site": "lumpi_M6",
+  "seed": 2,
+  "split": "val",
+  "uses_test_gt": false,
+  "uses_gt_identity": false,
+  "min_pairs": 32,
+  "worsen_tolerance": 1.02,
+  "train_overlap_pairs": [
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "mine_overlap_pairs": [
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "db_overlap_pairs": [
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "edges": {
+    "C05:C06": {
+      "n": 1757,
+      "before": {
+        "n": 1757.0,
+        "mean": 0.6781857295234135,
+        "median": 0.5660149378628498,
+        "p90": 1.11321534653826
+      },
+      "after_both_on": {
+        "n": 1757.0,
+        "mean": 0.4094973222798347,
+        "median": 0.2535110689562659,
+        "p90": 1.1134867958194214
+      },
+      "mean_worsens": false,
+      "notes": []
+    }
+  },
+  "val_mining": {
+    "n_obs": 34076,
+    "raw_mvc": 2702,
+    "dist_mvc": 2433,
+    "selected_mvc": 1757,
+    "protocol_stats": {
+      "observations_before_protocol_filter": 318470,
+      "observations_after_time_filter": 318470,
+      "observations_after_split_filter": 34076
+    },
+    "gt_identity_guard": {
+      "compared": 31310.0,
+      "matches": 0.0,
+      "match_fraction": 0.0
+    }
+  },
+  "initial_residual_cameras": [
+    "C05",
+    "C06"
+  ],
+  "residual_cameras": [
+    "C05",
+    "C06"
+  ],
+  "deployed_mask": {
+    "n": 1757,
+    "before": {
+      "n": 1757.0,
+      "mean": 0.6781857295234135,
+      "median": 0.5660149378628498,
+      "p90": 1.11321534653826
+    },
+    "after_initial_mask": {
+      "n": 1757.0,
+      "mean": 0.4094973222798347,
+      "median": 0.2535110689562659,
+      "p90": 1.1134867958194214
+    },
+    "after_final_mask": {
+      "n": 1757.0,
+      "mean": 0.4094973222798347,
+      "median": 0.2535110689562659,
+      "p90": 1.1134867958194214
+    },
+    "initial_mean_worsens": false,
+    "initial_notes": [],
+    "final_mean_worsens": false,
+    "final_notes": [],
+    "dropped": []
+  },
+  "cameras": {
+    "C05": {
+      "camera": "C05",
+      "n_val_pairs": 1757,
+      "on_train_overlap": true,
+      "before": {
+        "n": 1757.0,
+        "mean": 0.6781857295234135,
+        "median": 0.5660149378628498,
+        "p90": 1.11321534653826
+      },
+      "after_both_on": {
+        "n": 1757.0,
+        "mean": 0.4094973222798347,
+        "median": 0.2535110689562659,
+        "p90": 1.1134867958194214
+      },
+      "after_leave_one_on": {
+        "n": 1757.0,
+        "mean": 0.4684130458586462,
+        "median": 0.32482394427743166,
+        "p90": 1.0120270268612042
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 1757.0,
+        "mean": 0.4094973222798347,
+        "median": 0.2535110689562659,
+        "p90": 1.1134867958194214
+      }
+    },
+    "C06": {
+      "camera": "C06",
+      "n_val_pairs": 1757,
+      "on_train_overlap": true,
+      "before": {
+        "n": 1757.0,
+        "mean": 0.6781857295234135,
+        "median": 0.5660149378628498,
+        "p90": 1.11321534653826
+      },
+      "after_both_on": {
+        "n": 1757.0,
+        "mean": 0.4094973222798347,
+        "median": 0.2535110689562659,
+        "p90": 1.1134867958194214
+      },
+      "after_leave_one_on": {
+        "n": 1757.0,
+        "mean": 0.5587978995147117,
+        "median": 0.417841599148661,
+        "p90": 1.1760030743763854
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [
+        "p90 pair distance 1.1132->1.1760 m (diagnostic)"
+      ],
+      "after_deployed_mask": {
+        "n": 1757.0,
+        "mean": 0.4094973222798347,
+        "median": 0.2535110689562659,
+        "p90": 1.1134867958194214
+      }
+    },
+    "C07": {
+      "camera": "C07",
+      "n_val_pairs": 0,
+      "on_train_overlap": false,
+      "before": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_both_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_leave_one_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "apply": false,
+      "status": "insufficient",
+      "notes": [
+        "val pairs 0 < 32 and camera is not on the training overlap graph; \u0394P=0"
+      ],
+      "after_deployed_mask": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      }
+    }
+  },
+  "checkpoint": "<local-input>/lumpi_M6_seed2.pt",
+  "detection_db": "<local-input>/yolo_lumpi_M6.db",
+  "split_manifest": "<local-input>/dataset_split_manifest.csv",
+  "tc_json": "<local-input>/lumpi_M6_Tc.json",
+  "rule": "\u0394P only if val MVC count >= N_min and mean pair distance does not worsen vs T_c-only, then recheck D_S under the deployed on/off mask and drop cameras if the combination worsens. Thin-val and unsupervised cameras get \u0394P=0. T_c is not gated here."
+}

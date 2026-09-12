@@ -1,0 +1,5 @@
+stage,seed,artifact,command,status
+low_order_preflight,,results/runs/<site>/training/<site>_preflight_Tc.json,python src/evaluation/fit_fab2_low_order.py --split-manifest <gt_index> --train-splits train,template
+train_frozen_checkpoint,0,results/runs/<site>/training/frozen_checkpoints/<site>_seed0.pt,python src/pipeline/geometry_guided_residual_mlp.py train --max-residual-m 1.0 --max-pair-dist-m 2 --lambda-reg 0.10 --seeds via wrapper,template
+train_frozen_checkpoint,1,results/runs/<site>/training/frozen_checkpoints/<site>_seed1.pt,same as seed 0,template
+train_frozen_checkpoint,2,results/runs/<site>/training/frozen_checkpoints/<site>_seed2.pt,same as seed 0,template

@@ -1,0 +1,19 @@
+parameter,symbol,paper_value,notes
+Sensitivity saturation constant,s0,60 m,Table II
+Hard residual bound,r_max,1.0 m,Table II; recorded runs pass --max-residual-m 1.0
+MLP architecture / parameters,—,"7->64->64->2 / ~4.8k",Table II
+MVC alignment,—,interpolate to common t*; max gap 0.35 s,Table II
+Metric extent normalizer,L0,10 m,Appendix E
+Residual regularizer,lambda_reg,0.10,Appendix E and recorded principal-run command
+Temporal smoother,lambda_s,0.02,Appendix E
+Teacher power,gamma,1,Appendix E
+Student weight floor,phi0,0.05,Appendix E
+Regularizer confidence floor,r0,0.25,Appendix E
+Teacher confidence,tau,0.20,Appendix E
+Teacher confidence gap,tau_delta,0.05,Appendix E
+Shape gate strength,eta_shape,0.75,Appendix E
+Slimness clip,rho_bar,"[0.5, 3.0]",Appendix E
+Residual selector min val pairs,N_min,32,Appendix E; Appendix C selector rule; pipeline/fit_residual_acceptor.py --min-pairs
+Residual selector worsen tolerance,epsilon_q,0.02,Appendix E; Appendix C selector rule; pipeline/fit_residual_acceptor.py WorsenTol=1.02
+Mean residual regularizer,lambda_mean,1.0,Appendix E; recorded --lambda-mean-delta 1.0 (library argparse default 0)
+Pair-center residual regularizer,lambda_pair,0.5,Appendix E; recorded --lambda-pair-center 0.5 (library argparse default 0)

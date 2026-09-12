@@ -1,0 +1,750 @@
+{
+  "version": "mlp_percam_acceptor_v1",
+  "site": "synth_Town05_O_day",
+  "seed": 1,
+  "split": "val",
+  "uses_test_gt": false,
+  "uses_gt_identity": false,
+  "min_pairs": 32,
+  "worsen_tolerance": 1.02,
+  "train_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C01",
+      "C05"
+    ],
+    [
+      "C01",
+      "C06"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C02",
+      "C05"
+    ],
+    [
+      "C02",
+      "C06"
+    ],
+    [
+      "C03",
+      "C04"
+    ],
+    [
+      "C03",
+      "C05"
+    ],
+    [
+      "C03",
+      "C06"
+    ],
+    [
+      "C04",
+      "C05"
+    ],
+    [
+      "C04",
+      "C06"
+    ],
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "mine_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C01",
+      "C05"
+    ],
+    [
+      "C01",
+      "C06"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C02",
+      "C05"
+    ],
+    [
+      "C02",
+      "C06"
+    ],
+    [
+      "C03",
+      "C04"
+    ],
+    [
+      "C03",
+      "C05"
+    ],
+    [
+      "C03",
+      "C06"
+    ],
+    [
+      "C04",
+      "C05"
+    ],
+    [
+      "C04",
+      "C06"
+    ],
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "db_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C01",
+      "C05"
+    ],
+    [
+      "C01",
+      "C06"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C02",
+      "C05"
+    ],
+    [
+      "C02",
+      "C06"
+    ],
+    [
+      "C03",
+      "C04"
+    ],
+    [
+      "C03",
+      "C05"
+    ],
+    [
+      "C03",
+      "C06"
+    ],
+    [
+      "C04",
+      "C05"
+    ],
+    [
+      "C04",
+      "C06"
+    ],
+    [
+      "C05",
+      "C06"
+    ]
+  ],
+  "edges": {
+    "C01:C02": {
+      "n": 47,
+      "before": {
+        "n": 47.0,
+        "mean": 0.43028014256055197,
+        "median": 0.47232741272981044,
+        "p90": 0.6785056388522701
+      },
+      "after_both_on": {
+        "n": 47.0,
+        "mean": 0.3748869558059419,
+        "median": 0.3376541164718371,
+        "p90": 0.5953122076426952
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C01:C03": {
+      "n": 88,
+      "before": {
+        "n": 88.0,
+        "mean": 0.2512514741167902,
+        "median": 0.2564746317001787,
+        "p90": 0.44128597436773764
+      },
+      "after_both_on": {
+        "n": 88.0,
+        "mean": 0.26290739571510735,
+        "median": 0.2690926286071915,
+        "p90": 0.45284560005202157
+      },
+      "mean_worsens": true,
+      "notes": [
+        "mean pair distance 0.2513->0.2629 m",
+        "median pair distance 0.2565->0.2691 m (diagnostic)",
+        "p90 pair distance 0.4413->0.4528 m (diagnostic)"
+      ]
+    },
+    "C01:C04": {
+      "n": 65,
+      "before": {
+        "n": 65.0,
+        "mean": 0.40216943027574215,
+        "median": 0.38865989370967263,
+        "p90": 0.5765359955594449
+      },
+      "after_both_on": {
+        "n": 65.0,
+        "mean": 0.3245862227908904,
+        "median": 0.2907397828115169,
+        "p90": 0.5421842639843414
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C01:C05": {
+      "n": 43,
+      "before": {
+        "n": 43.0,
+        "mean": 0.5086850729557522,
+        "median": 0.47758260613418113,
+        "p90": 0.8152469417408218
+      },
+      "after_both_on": {
+        "n": 43.0,
+        "mean": 0.49585742751040734,
+        "median": 0.3508836488235853,
+        "p90": 0.8749855135572381
+      },
+      "mean_worsens": false,
+      "notes": [
+        "p90 pair distance 0.8152->0.8750 m (diagnostic)"
+      ]
+    },
+    "C01:C06": {
+      "n": 182,
+      "before": {
+        "n": 182.0,
+        "mean": 0.5109421040781607,
+        "median": 0.5401076431036501,
+        "p90": 0.6078271127544586
+      },
+      "after_both_on": {
+        "n": 182.0,
+        "mean": 0.2568479330880641,
+        "median": 0.1824774395939727,
+        "p90": 0.5077941316574832
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C02:C03": {
+      "n": 78,
+      "before": {
+        "n": 78.0,
+        "mean": 0.33597265800836656,
+        "median": 0.3336035794980712,
+        "p90": 0.5698043262702518
+      },
+      "after_both_on": {
+        "n": 78.0,
+        "mean": 0.3289134297842475,
+        "median": 0.30946867073093,
+        "p90": 0.6416904528901672
+      },
+      "mean_worsens": false,
+      "notes": [
+        "p90 pair distance 0.5698->0.6417 m (diagnostic)"
+      ]
+    },
+    "C02:C04": {
+      "n": 93,
+      "before": {
+        "n": 93.0,
+        "mean": 0.2586731372740063,
+        "median": 0.21917873374985464,
+        "p90": 0.4934736014391759
+      },
+      "after_both_on": {
+        "n": 93.0,
+        "mean": 0.3140968685576796,
+        "median": 0.29753162395571287,
+        "p90": 0.5066455609725572
+      },
+      "mean_worsens": true,
+      "notes": [
+        "mean pair distance 0.2587->0.3141 m",
+        "median pair distance 0.2192->0.2975 m (diagnostic)",
+        "p90 pair distance 0.4935->0.5066 m (diagnostic)"
+      ]
+    },
+    "C02:C05": {
+      "n": 53,
+      "before": {
+        "n": 53.0,
+        "mean": 0.8391915932263303,
+        "median": 0.8429100997227802,
+        "p90": 1.1737373079706657
+      },
+      "after_both_on": {
+        "n": 53.0,
+        "mean": 0.7125694813148643,
+        "median": 0.7253135015870958,
+        "p90": 0.941612340460978
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C02:C06": {
+      "n": 142,
+      "before": {
+        "n": 142.0,
+        "mean": 0.42144956497492253,
+        "median": 0.422668378462568,
+        "p90": 0.6059652423033561
+      },
+      "after_both_on": {
+        "n": 142.0,
+        "mean": 0.32475256930779406,
+        "median": 0.2988132366705414,
+        "p90": 0.5401460549069695
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C03:C04": {
+      "n": 71,
+      "before": {
+        "n": 71.0,
+        "mean": 0.3418953770058802,
+        "median": 0.3039049728750328,
+        "p90": 0.6252885875298557
+      },
+      "after_both_on": {
+        "n": 71.0,
+        "mean": 0.31999085311209996,
+        "median": 0.3152596625942947,
+        "p90": 0.4858936344659195
+      },
+      "mean_worsens": false,
+      "notes": [
+        "median pair distance 0.3039->0.3153 m (diagnostic)"
+      ]
+    },
+    "C03:C05": {
+      "n": 47,
+      "before": {
+        "n": 47.0,
+        "mean": 0.597755095106823,
+        "median": 0.7265209619165455,
+        "p90": 0.8616347478654282
+      },
+      "after_both_on": {
+        "n": 47.0,
+        "mean": 0.4787975899446728,
+        "median": 0.5802644255329333,
+        "p90": 0.714949866053504
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C03:C06": {
+      "n": 119,
+      "before": {
+        "n": 119.0,
+        "mean": 0.44532130868864145,
+        "median": 0.4832840005707883,
+        "p90": 0.6330528514008389
+      },
+      "after_both_on": {
+        "n": 119.0,
+        "mean": 0.2421973858326209,
+        "median": 0.15546950499430723,
+        "p90": 0.5200220571344892
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C04:C05": {
+      "n": 26,
+      "before": {
+        "n": 26.0,
+        "mean": 0.7124254977874644,
+        "median": 0.7173310833970854,
+        "p90": 0.8328701586720995
+      },
+      "after_both_on": {
+        "n": 26.0,
+        "mean": 0.5424163045321232,
+        "median": 0.4751130374934549,
+        "p90": 0.7028294000928241
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C04:C06": {
+      "n": 95,
+      "before": {
+        "n": 95.0,
+        "mean": 0.4029501612887936,
+        "median": 0.3403644616666285,
+        "p90": 0.772249246966345
+      },
+      "after_both_on": {
+        "n": 95.0,
+        "mean": 0.29748420066102504,
+        "median": 0.2575617670749473,
+        "p90": 0.5683015076615199
+      },
+      "mean_worsens": false,
+      "notes": []
+    },
+    "C05:C06": {
+      "n": 66,
+      "before": {
+        "n": 66.0,
+        "mean": 0.9373031988093352,
+        "median": 0.978770042003035,
+        "p90": 1.486663293100713
+      },
+      "after_both_on": {
+        "n": 66.0,
+        "mean": 0.6469008459722025,
+        "median": 0.673975957605462,
+        "p90": 0.9764268562959608
+      },
+      "mean_worsens": false,
+      "notes": []
+    }
+  },
+  "val_mining": {
+    "n_obs": 2475,
+    "raw_mvc": 1780,
+    "dist_mvc": 1780,
+    "selected_mvc": 1215,
+    "protocol_stats": {
+      "observations_before_protocol_filter": 33640,
+      "observations_after_time_filter": 33640,
+      "observations_after_split_filter": 2475
+    },
+    "gt_identity_guard": {
+      "compared": 2320.0,
+      "matches": 0.0,
+      "match_fraction": 0.0
+    }
+  },
+  "initial_residual_cameras": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+  ],
+  "residual_cameras": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+  ],
+  "deployed_mask": {
+    "n": 1215,
+    "before": {
+      "n": 1215.0,
+      "mean": 0.46251220459765524,
+      "median": 0.43606715828128667,
+      "p90": 0.7893931912286474
+    },
+    "after_initial_mask": {
+      "n": 1215.0,
+      "mean": 0.35207633260070814,
+      "median": 0.30486675992954115,
+      "p90": 0.6746872273999343
+    },
+    "after_final_mask": {
+      "n": 1215.0,
+      "mean": 0.35207633260070814,
+      "median": 0.30486675992954115,
+      "p90": 0.6746872273999343
+    },
+    "initial_mean_worsens": false,
+    "initial_notes": [],
+    "final_mean_worsens": false,
+    "final_notes": [],
+    "dropped": []
+  },
+  "cameras": {
+    "C01": {
+      "camera": "C01",
+      "n_val_pairs": 425,
+      "on_train_overlap": true,
+      "before": {
+        "n": 425.0,
+        "mean": 0.43138642463498666,
+        "median": 0.4624729415408638,
+        "p90": 0.644453295263938
+      },
+      "after_both_on": {
+        "n": 425.0,
+        "mean": 0.3056984363110395,
+        "median": 0.24524204671033117,
+        "p90": 0.5526132242829187
+      },
+      "after_leave_one_on": {
+        "n": 425.0,
+        "mean": 0.39322086039825177,
+        "median": 0.3755062903937431,
+        "p90": 0.6229412000606783
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 425.0,
+        "mean": 0.3056984363110395,
+        "median": 0.24524204671033117,
+        "p90": 0.5526132242829187
+      }
+    },
+    "C02": {
+      "camera": "C02",
+      "n_val_pairs": 413,
+      "on_train_overlap": true,
+      "before": {
+        "n": 413.0,
+        "mean": 0.42326544421044954,
+        "median": 0.3752481335433317,
+        "p90": 0.7894009237366435
+      },
+      "after_both_on": {
+        "n": 413.0,
+        "mean": 0.37861256797411463,
+        "median": 0.32428207296469785,
+        "p90": 0.7206820647536412
+      },
+      "after_leave_one_on": {
+        "n": 413.0,
+        "mean": 0.423281142942806,
+        "median": 0.3862864343767207,
+        "p90": 0.7667982306265293
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [
+        "median pair distance 0.3752->0.3863 m (diagnostic)"
+      ],
+      "after_deployed_mask": {
+        "n": 413.0,
+        "mean": 0.37861256797411463,
+        "median": 0.32428207296469785,
+        "p90": 0.7206820647536412
+      }
+    },
+    "C03": {
+      "camera": "C03",
+      "n_val_pairs": 403,
+      "on_train_overlap": true,
+      "before": {
+        "n": 403.0,
+        "mean": 0.38133571716703885,
+        "median": 0.3675743261829532,
+        "p90": 0.7250895997976717
+      },
+      "after_both_on": {
+        "n": 403.0,
+        "mean": 0.3048025423288868,
+        "median": 0.290356290329014,
+        "p90": 0.5992099609802841
+      },
+      "after_leave_one_on": {
+        "n": 403.0,
+        "mean": 0.3637509664406814,
+        "median": 0.3356236787377177,
+        "p90": 0.696078397291289
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 403.0,
+        "mean": 0.3048025423288868,
+        "median": 0.290356290329014,
+        "p90": 0.5992099609802841
+      }
+    },
+    "C04": {
+      "camera": "C04",
+      "n_val_pairs": 350,
+      "on_train_overlap": true,
+      "before": {
+        "n": 350.0,
+        "mean": 0.3750728993335222,
+        "median": 0.3402663570283455,
+        "p90": 0.7181811209005292
+      },
+      "after_both_on": {
+        "n": 350.0,
+        "mean": 0.32969224802532504,
+        "median": 0.3063351914776112,
+        "p90": 0.5586720460439949
+      },
+      "after_leave_one_on": {
+        "n": 350.0,
+        "mean": 0.36874196246237245,
+        "median": 0.32627702294907884,
+        "p90": 0.6427941265295666
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 350.0,
+        "mean": 0.32969224802532504,
+        "median": 0.3063351914776112,
+        "p90": 0.5586720460439949
+      }
+    },
+    "C05": {
+      "camera": "C05",
+      "n_val_pairs": 235,
+      "on_train_overlap": true,
+      "before": {
+        "n": 235.0,
+        "mean": 0.7439581962212923,
+        "median": 0.7360273300038026,
+        "p90": 1.2319674724579348
+      },
+      "after_both_on": {
+        "n": 235.0,
+        "mean": 0.5888928441363213,
+        "median": 0.614703198559156,
+        "p90": 0.924145973626946
+      },
+      "after_leave_one_on": {
+        "n": 235.0,
+        "mean": 0.6742996974957631,
+        "median": 0.6579462828864361,
+        "p90": 1.1467413832006896
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 235.0,
+        "mean": 0.5888928441363213,
+        "median": 0.614703198559156,
+        "p90": 0.924145973626946
+      }
+    },
+    "C06": {
+      "camera": "C06",
+      "n_val_pairs": 604,
+      "on_train_overlap": true,
+      "before": {
+        "n": 604.0,
+        "mean": 0.5065775055405035,
+        "median": 0.5002861604226687,
+        "p90": 0.7683077456699
+      },
+      "after_both_on": {
+        "n": 604.0,
+        "mean": 0.3189389610509587,
+        "median": 0.24919959813615022,
+        "p90": 0.6413222382770988
+      },
+      "after_leave_one_on": {
+        "n": 604.0,
+        "mean": 0.365060191291916,
+        "median": 0.332225459900507,
+        "p90": 0.6253068314572178
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 604.0,
+        "mean": 0.3189389610509587,
+        "median": 0.24919959813615022,
+        "p90": 0.6413222382770988
+      }
+    }
+  },
+  "checkpoint": "<local-input>/synth_Town05_O_day_seed1.pt",
+  "detection_db": "<local-input>/yolo_synth_Town05_O_day.db",
+  "split_manifest": "<local-input>/dataset_split_manifest.csv",
+  "tc_json": "<local-input>/synth_Town05_O_day_Tc.json",
+  "rule": "\u0394P only if val MVC count >= N_min and mean pair distance does not worsen vs T_c-only, then recheck D_S under the deployed on/off mask and drop cameras if the combination worsens. Thin-val and unsupervised cameras get \u0394P=0. T_c is not gated here."
+}

@@ -1,0 +1,5 @@
+site,gate_outcome,training_pair_mean_and_held_out_localization,interpretation
+M6 C05-C06,accepted Tc,"pair mean 0.855->0.800 m; median geo -> geo+Tc -> final: 0.825->0.696->0.608-0.658 m",translation and residual increments separated
+M3,accepted Tc,"pair mean 0.433->0.244 m; median geo -> geo+Tc: 0.793->0.781 m",fixed-translation median difference not significant
+Town04,accepted Tc,"pair mean 0.415->0.326 m; median geo -> geo+Tc: 0.744->0.750 m",sparse retained-pair setting
+Town05,rejected; Tc=0,"pair mean 0.522->0.503 m; no runtime translation applied",low constant-bias regime

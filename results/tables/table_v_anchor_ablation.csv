@@ -1,0 +1,9 @@
+site,bottom_center_plus_H_m,box_center_plus_H_m,pixel_horizon_scalar_m,HSG_anchor_plus_H_m,HSG_vs_bottom_m,HSG_vs_center_m,HSG_vs_pixel_m
+M6,2.17,1.72,1.01,0.76,-1.41 sig,-0.96 sig,-0.25 sig
+M3,1.93,1.32,1.16,0.79,-1.14 sig,-0.53 sig,-0.36 sig
+Town04,1.63,2.61,1.63,0.74,-0.89 sig,-1.87 sig,-0.89 sig
+Town05,1.80,2.42,1.41,0.62,-1.18 sig,-1.80 sig,-0.79 sig
+
+site,pixel_horizon_low_kappa_p90_m,jacobian_metric_low_kappa_p90_m,delta_m
+M6,3.15,1.63,-1.52
+Town05,4.37,1.53,-2.84

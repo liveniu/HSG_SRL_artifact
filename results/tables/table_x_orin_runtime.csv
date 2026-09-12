@@ -1,0 +1,5 @@
+runtime_setting,localized_boxes_per_frame_n_b,stack_2d_p50_ms_per_frame,P_geo_p50_ms_per_box,SRL_p50_ms_per_box,SRL_frame_sum_p50_ms_per_frame,ratio_2d_over_SRL,BEV_merge_busy_tick_p50_ms
+M6,9.8,192.3,0.245,7.789,72.59,2.6,448.7
+M3,8.7,169.5,0.242,7.451,63.53,2.7,596.0
+Town04,0.8,70.6,0.432,12.864,8.46,8.3,22.0
+Town05,3.5,134.9,0.331,10.704,29.91,4.5,72.5

@@ -1,0 +1,6 @@
+site,scope,P_IPM_m,P_geo_m,P_final_m,BEVHeight_ref_m,dMedian_ipm_to_geo_m,dMedian_geo_to_final_m
+LUMPI M6,all cameras,2.17,0.76,0.61-0.65,[0.51],-1.41 (sig),-0.11 to -0.15 (sig; all seeds; C07 DeltaP=0)
+LUMPI M6,C05-C06 subgraph (Table III footnote),2.14,0.82,0.61-0.66,—,-1.31 (sig),-0.17 to -0.22 (sig; all seeds)
+LUMPI M3,all cameras,1.93,0.79,0.81-0.84,[0.80],-1.14 (sig),ns
+Synthehicle Town04,all cameras,1.63,0.74,0.74-0.75,[0.33],-0.89 (sig),ns
+Synthehicle Town05,all cameras,1.80,0.62,0.55,[0.33],-1.18 (sig),ns

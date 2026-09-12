@@ -1,0 +1,20 @@
+paper_item,artifact_path,generator
+Table II / Appendix E,results/tables/table_ii_defaults.csv,configs/paper_defaults.yaml
+Table III,results/tables/table_iii_localization.csv,scripts/eval_paper_tables.py -> eval_fab2_localization.py
+Table IV,results/tables/table_iv_tracking.csv,scripts/eval_paper_tables.py -> eval_fab2_bev_hota.py (Hungarian DetA/AssA/LocA/HOTA). Do not use eval_fab2_tracking.py hota_proxy.
+Table V,results/tables/table_v_anchor_ablation.csv,scripts/eval_paper_tables.py -> eval_fab2_core_ablation.py
+Table VI,results/tables/table_vi_residual_scope.csv,evaluation/eval_fab2_kappa_strata.py and recorded M6 subgraph tools
+Appendix C selector,manifests/acceptor/<site>_seed{N}.json,pipeline/fit_residual_acceptor.py via scripts/train_paper_sites.py
+Table VII,results/tables/table_vii_teacher_ablation.csv,eval_fab2_core_ablation.py teacher variants
+Table VIII,results/tables/table_viii_translation_gate.csv,manifests/preflight/*_preflight_Tc.json
+Table IX,results/tables/table_ix_drift_recovery.csv,evaluation/run_fab2_perturbation_recovery.py
+Table X,results/tables/table_x_orin_runtime.csv,evaluation/profile_fab2_edge.py
+Appendix Table B.1,results/tables/table_b1_teacher_direction.csv,evaluation/eval_fab2_premise_audit.py
+MVC pair counts,results/tables/mvc_pair_counts.csv,training logs / mine_mvc_pairs
+Fig. 1,figures/sources/fig1_overall_hsg_srl_architecture_fab3.svg,manual schematic
+Fig. 2(a),figures/sources/fig2_homography_sensitivity_guidance.svg,manual schematic
+Fig. 2(b),figures/PLACEHOLDER_fig2b_measured_field.md,not redistributed; LUMPI view under dataset license
+Fig. 3,figures/sources/fig5_geometric_localization.svg,results/tables/table_iii_localization.csv and table_iv_tracking.csv
+Fig. 4,figures/sources/fig6_translation_gate_recovery.svg,results/tables/table_ix_drift_recovery.csv
+Appendix F,evaluation/eval_fab2_calibration.py,frozen_homography_perturbation.csv (roll/pitch stress diagnostics; not a principal table)
+Algorithm D.1 schematic (not a body figure),figures/sources/figd1_low_order_calibration_screening.svg,optional; manuscript body figures are Fig. 1-4

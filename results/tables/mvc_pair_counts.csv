@@ -1,0 +1,5 @@
+site,kept_pairs,after_distance_pairs,notes
+LUMPI M6,12231,17021,C05-C06 is the residual-supported component
+LUMPI M3,46763,149586,dense kept-pair set
+Synthehicle Town04,1057,1574,thin-supervision case
+Synthehicle Town05,9459,12875,dense synthetic pair set

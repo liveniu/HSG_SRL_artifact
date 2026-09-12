@@ -1,0 +1,13 @@
+The following classes of files are intentionally absent from this artifact.
+
+- LUMPI and Synthehicle videos, first-frame images, LiDAR, and official labels
+- Derived GT index CSVs that contain world coordinates or official identities
+- Full detection work databases and YOLO caches (`data/work/`, `*.db` except the synthetic smoke DB)
+- Frozen residual checkpoints (`*.pt`); regenerate with scripts/train_paper_sites.py
+- IDE / venv / smoke-test scratch (`.idea/`, `.venv/`, `results/smoke/`, `results/runs/`)
+- Unfiltered experiment logs under the development-repo experiments_* trees
+
+Rebuild licensed inputs with scripts/import_paper_sites.py after you accept the
+dataset licenses. Rebuild splits with src/evaluation/fab2_manifest.py using
+contiguous 60/10/30 time cuts. Verify published files with
+manifests/ARTIFACT_MANIFEST.csv.

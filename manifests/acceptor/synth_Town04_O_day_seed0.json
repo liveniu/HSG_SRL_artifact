@@ -1,0 +1,308 @@
+{
+  "version": "mlp_percam_acceptor_v1",
+  "site": "synth_Town04_O_day",
+  "seed": 0,
+  "split": "val",
+  "uses_test_gt": false,
+  "uses_gt_identity": false,
+  "min_pairs": 32,
+  "worsen_tolerance": 1.02,
+  "train_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C03",
+      "C04"
+    ]
+  ],
+  "mine_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C03",
+      "C04"
+    ]
+  ],
+  "db_overlap_pairs": [
+    [
+      "C01",
+      "C02"
+    ],
+    [
+      "C01",
+      "C03"
+    ],
+    [
+      "C01",
+      "C04"
+    ],
+    [
+      "C02",
+      "C03"
+    ],
+    [
+      "C02",
+      "C04"
+    ],
+    [
+      "C03",
+      "C04"
+    ]
+  ],
+  "edges": {
+    "C01:C04": {
+      "n": 411,
+      "before": {
+        "n": 411.0,
+        "mean": 0.21373739392121305,
+        "median": 0.1588487729502629,
+        "p90": 0.43545212150959256
+      },
+      "after_both_on": {
+        "n": 411.0,
+        "mean": 0.21261992375438968,
+        "median": 0.15742665971210598,
+        "p90": 0.43927738517084247
+      },
+      "mean_worsens": false,
+      "notes": []
+    }
+  },
+  "val_mining": {
+    "n_obs": 1749,
+    "raw_mvc": 411,
+    "dist_mvc": 411,
+    "selected_mvc": 411,
+    "protocol_stats": {
+      "observations_before_protocol_filter": 11785,
+      "observations_after_time_filter": 11785,
+      "observations_after_split_filter": 1749
+    },
+    "gt_identity_guard": {
+      "compared": 1521.0,
+      "matches": 0.0,
+      "match_fraction": 0.0
+    }
+  },
+  "initial_residual_cameras": [
+    "C01",
+    "C04"
+  ],
+  "residual_cameras": [
+    "C01",
+    "C04"
+  ],
+  "deployed_mask": {
+    "n": 411,
+    "before": {
+      "n": 411.0,
+      "mean": 0.21373739392121305,
+      "median": 0.1588487729502629,
+      "p90": 0.43545212150959256
+    },
+    "after_initial_mask": {
+      "n": 411.0,
+      "mean": 0.21261992375438968,
+      "median": 0.15742665971210598,
+      "p90": 0.43927738517084247
+    },
+    "after_final_mask": {
+      "n": 411.0,
+      "mean": 0.21261992375438968,
+      "median": 0.15742665971210598,
+      "p90": 0.43927738517084247
+    },
+    "initial_mean_worsens": false,
+    "initial_notes": [],
+    "final_mean_worsens": false,
+    "final_notes": [],
+    "dropped": []
+  },
+  "cameras": {
+    "C01": {
+      "camera": "C01",
+      "n_val_pairs": 411,
+      "on_train_overlap": true,
+      "before": {
+        "n": 411.0,
+        "mean": 0.21373739392121305,
+        "median": 0.1588487729502629,
+        "p90": 0.43545212150959256
+      },
+      "after_both_on": {
+        "n": 411.0,
+        "mean": 0.21261992375438968,
+        "median": 0.15742665971210598,
+        "p90": 0.43927738517084247
+      },
+      "after_leave_one_on": {
+        "n": 411.0,
+        "mean": 0.23674558163856524,
+        "median": 0.18069279948145747,
+        "p90": 0.5068313253373694
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": true,
+      "leave_one_on_notes": [
+        "mean pair distance 0.2137->0.2367 m",
+        "median pair distance 0.1588->0.1807 m (diagnostic)",
+        "p90 pair distance 0.4355->0.5068 m (diagnostic)"
+      ],
+      "after_deployed_mask": {
+        "n": 411.0,
+        "mean": 0.21261992375438968,
+        "median": 0.15742665971210598,
+        "p90": 0.43927738517084247
+      }
+    },
+    "C02": {
+      "camera": "C02",
+      "n_val_pairs": 0,
+      "on_train_overlap": true,
+      "before": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_both_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_leave_one_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "apply": false,
+      "status": "thin_val",
+      "notes": [
+        "val pairs 0 < 32; too thin to test, \u0394P=0"
+      ],
+      "after_deployed_mask": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      }
+    },
+    "C03": {
+      "camera": "C03",
+      "n_val_pairs": 0,
+      "on_train_overlap": true,
+      "before": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_both_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "after_leave_one_on": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "apply": false,
+      "status": "thin_val",
+      "notes": [
+        "val pairs 0 < 32; too thin to test, \u0394P=0"
+      ],
+      "after_deployed_mask": {
+        "n": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      }
+    },
+    "C04": {
+      "camera": "C04",
+      "n_val_pairs": 411,
+      "on_train_overlap": true,
+      "before": {
+        "n": 411.0,
+        "mean": 0.21373739392121305,
+        "median": 0.1588487729502629,
+        "p90": 0.43545212150959256
+      },
+      "after_both_on": {
+        "n": 411.0,
+        "mean": 0.21261992375438968,
+        "median": 0.15742665971210598,
+        "p90": 0.43927738517084247
+      },
+      "after_leave_one_on": {
+        "n": 411.0,
+        "mean": 0.19393666963881853,
+        "median": 0.1527172855208347,
+        "p90": 0.3751379837782297
+      },
+      "apply": true,
+      "status": "recommended",
+      "notes": [
+        "val MVC mean pair distance does not worsen; keep \u0394P"
+      ],
+      "leave_one_on_worsens": false,
+      "leave_one_on_notes": [],
+      "after_deployed_mask": {
+        "n": 411.0,
+        "mean": 0.21261992375438968,
+        "median": 0.15742665971210598,
+        "p90": 0.43927738517084247
+      }
+    }
+  },
+  "checkpoint": "<local-input>/synth_Town04_O_day_seed0.pt",
+  "detection_db": "<local-input>/yolo_synth_Town04_O_day.db",
+  "split_manifest": "<local-input>/dataset_split_manifest.csv",
+  "tc_json": "<local-input>/synth_Town04_O_day_Tc.json",
+  "rule": "\u0394P only if val MVC count >= N_min and mean pair distance does not worsen vs T_c-only, then recheck D_S under the deployed on/off mask and drop cameras if the combination worsens. Thin-val and unsupervised cameras get \u0394P=0. T_c is not gated here."
+}

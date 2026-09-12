@@ -1,0 +1,11 @@
+dataset,site,recording,scene_id,record_type,camera_id,camera_a,camera_b,scale_px_per_meter,homography_source,point_count,inlier_count,reproj_rms,geometry_version,bfs_hop,calibrated_at
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,camera_calibration,C01,,,4,synth_ground_plane_fallback:Town04-O-day,0,0,9.739452253e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:40.262508+00:00
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,camera_calibration,C02,,,4,synth_ground_plane_fallback:Town04-O-day,0,0,4.152916517e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:40.263508+00:00
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,camera_calibration,C03,,,4,synth_ground_plane_fallback:Town04-O-day,0,0,5.086263172e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:40.263508+00:00
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,camera_calibration,C04,,,4,synth_ground_plane_fallback:Town04-O-day,0,0,2.397687467e-06,fab1_metric_jacobian_v1,,2026-08-12T04:04:40.263508+00:00
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C01,C02,,,,,,,,
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C01,C03,,,,,,,,
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C01,C04,,,,,,,,
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C02,C03,,,,,,,,
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C02,C04,,,,,,,,
+Synthehicle Core,synth_Town04_O_day,synth_Town04_O_day,synth_Town04_O_day,overlap_edge,,C03,C04,,,,,,,,

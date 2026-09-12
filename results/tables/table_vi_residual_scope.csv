@@ -1,0 +1,6 @@
+slice,supervision_relation,held_out_behavior,interpretation
+M6 C05-C06 later C06 interval,"same cameras, later time",dMedian -0.21 to -0.25 m; dRMSE -0.08 to -0.09 m,time-held-out combined correction
+M6 C05-C06 overlap,training-pair geometry,dMedian -0.060 to -0.074 m; dRMSE -0.084 to -0.098 m,combined gain inside overlap
+M6 C05-C06 transition region,neighborhood of the overlap edge,dMedian -0.162 to -0.189 m; dRMSE -0.137 to -0.179 m,combined gain near camera transition
+M6 C05-C06 non-overlap,"same cameras, single-view field",dMedian -0.252 to -0.317 m; dRMSE -0.201 to -0.248 m,combined correction beyond overlap
+M6 C07 forced-residual check,no validation MVC pairs,median increases by +0.11 to +0.17 m,supports keeping the residual off when validation pairs are absent

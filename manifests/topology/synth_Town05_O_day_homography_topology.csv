@@ -1,0 +1,22 @@
+dataset,site,recording,scene_id,record_type,camera_id,camera_a,camera_b,scale_px_per_meter,homography_source,point_count,inlier_count,reproj_rms,geometry_version,bfs_hop,calibrated_at
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C01,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,2.297240826e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C02,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,1.916158681e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C03,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,2.020315151e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C04,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,1.800118298e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C05,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,1.905876388e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,camera_calibration,C06,,,4,synth_ground_plane_fallback:Town05-O-day,0,0,2.51873098e-06,fab1_metric_jacobian_v1,,2026-08-12T07:21:53.937575+00:00
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C01,C02,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C01,C03,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C01,C04,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C01,C05,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C01,C06,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C02,C03,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C02,C04,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C02,C05,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C02,C06,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C03,C04,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C03,C05,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C03,C06,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C04,C05,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C04,C06,,,,,,,,
+Synthehicle Core,synth_Town05_O_day,synth_Town05_O_day,synth_Town05_O_day,overlap_edge,,C05,C06,,,,,,,,
